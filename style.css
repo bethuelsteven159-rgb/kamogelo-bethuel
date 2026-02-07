@@ -244,14 +244,14 @@ footer {
 
 .WDDV{
     background: rgba(0,0,0,0.4);
-    max-width: 420px;
+    max-width: 600px;
     display: flex;
     flex-direction: column; /* Stacks children vertically */
     align-items: center;    /* Centers content horizontally */
     text-align: center;
 }
 .WDDV img {
-    max-width: 95%; /* Ensures image is responsive */
+    max-width: 55%; /* Ensures image is responsive */
     height: auto;
     margin-top: 5px; /* Adds space under the header */
     margin-bottom: 5px; /* Adds space above the button */
@@ -264,4 +264,5 @@ footer {
    border-radius: 10px;
    cursor: pointer;
 }
+
 
