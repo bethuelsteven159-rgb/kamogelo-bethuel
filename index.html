@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kamogelo & Bethuel</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script_side.js" defer></script>
+  </head>
+
+  <body>
+    <main class="container">
+      <!-- Title -->
+      <h1>Kamogelo & Bethuel</h1>
+
+      <!-- Strong message placeholder -->
+      <p class="main-message">
+        <!-- We will write something powerful here later -->
+        A space built with intention, love, and a future in mind.
+      </p>
+
+      <!-- Important Notices Section -->
+      <section class="card">
+        <h2>Important Notices</h2>
+
+        <div class="notice" id="ValentineNoticeContainer">
+          <span class="badge">New</span>
+          <p class="notice-link" id="showVali">
+            A new event has occurred — click to open
+          </p>
+        </div>
+      </section>
+
+      <!-- Upcoming Events Section -->
+      <section class="card">
+        <h2>Upcoming Events</h2>
+        <ul id="upcomingEventsList"></ul>
+      </section>
+
+      <!-- Future Plans Section -->
+      <section class="card">
+        <h2>Future Website Plans</h2>
+        <ul>
+          <li>Private memories and messages</li>
+          <li>Shared milestones & timelines</li>
+          <li>Surprise events and letters</li>
+          <li>Features built only for us</li>
+        </ul>
+      </section>
+
+      <!-- Footer Note -->
+      <footer>
+        <p>
+          Please note that this website is our personal website and will be
+          updated with the coolest features over time. This is only a rough
+          draft for now.
+        </p>
+      </footer>
+    </main>
+    <div class="ValentinePopUpContainer" id="ValentinePopUpContainer">
+      <div class="ValentinePopUp">
+        <h1>
+          WILL YOU MAKE ME THE HAPPIEST BOYFRIEND EVER BY BIENG MY VALENTINES
+          BABY?😍
+        </h1>
+        <img src="valenimage.jpeg " alt="blushing cat" />
+        <div class="buttons">
+          <button class="ValentineButtonYes" id="ValentineButtonYes">
+            <p class="textNo">YES😍</p>
+          </button>
+          <button class="ValentineButtonNo" id="ValentineButtonNo">
+            <p class="textNo">NO😭</p>
+          </button>
+          <button class="ValentineButtonClose" id="ValentineButtonClose">
+            <p class="textYes">CLOSE</p>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="CelebrationContainer" id="CelebrationContainer">
+      <div class="CelebrationPopup">
+        <h2>💖 Thank You, My Love 💖</h2>
+        <p>
+          Thanks a lot for accepting my request baby. To show my appreciation,
+          we will be going to the
+          <strong>Wits Digital Dome</strong> as our Valentine’s special event.
+        </p>
+        <button id="celebrationClose">Close</button>
+      </div>
+    </div>
+
+    <div class="WDDVContainer" id="WDDVContainer">
+      <div class="WDDV" id="WDDV">
+        <img src="WitsDDV.jpeg " alt="more valentines infomation" />
+        <button id="ButtonCloseValentineInfo">Close</button>
+      </div>
+    </div>
+    <!-- Confetti container -->
+    <div id="confettiContainer"></div>
+
+    <script src="script_side.js"></script>
+  </body>
+</html>

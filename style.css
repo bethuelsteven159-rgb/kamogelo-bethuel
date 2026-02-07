@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #fde2e4, #f8edeb);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3a3a3a;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
+    color: #c9184a;
+}
+
+.main-message {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.card {
+    
+    background: #fff0f3;
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.card h2 {
+    color: #c9184a;
+    margin-bottom: 1rem;
+}
+
+.nothing {
+    font-style: italic;
+}
+
+.notice {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.badge {
+    background: #ff4d6d;
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+}
+
+.notice-link {
+    text-decoration: none;
+    color: #3a3a3a;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.notice-link:hover {
+    text-decoration: underline;
+}
+
+ul {
+    padding-left: 1.2rem;
+}
+
+li {
+    margin-bottom: 0.6rem;
+}
+
+footer {
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.ValentinePopUpContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease;
+}
+
+.ValentinePopUpContainer.show{
+    opacity:1;
+    pointer-events: auto;
+}
+.ValentinePopUp{
+    background: #fff0f3;
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    align-items: center;    /* Centers content horizontally */
+    text-align: center;
+}
+.ValentinePopUp {
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+.ValentinePopUpContainer.show.ValentinePopUp {
+  transform: scale(1);
+}
+
+.ValentinePopUpContainer img {
+   
+    /* Styles for your image */
+    max-width: 30%; /* Ensures image is responsive */
+    height: auto;
+    margin-top: 5px; /* Adds space under the header */
+    margin-bottom: 5px; /* Adds space above the button */
+}
+.ValentineButtonYes{
+    background: #f10f3d;
+    padding: 1rem;
+    border-radius: 25px;
+    margin-top: 1.5rem;
+}
+.textNo {
+    color:#f0e9eb;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.textYes {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+
+
+.ValentineButtonNo{
+    background: #16070a;
+    padding: 1rem;
+    border-radius: 25px;
+    margin-left: 1.5rem;
+}
+ .ValentineButtonClose{
+    background: #f0e9eb;
+    padding: 1rem;
+    border-radius: 25px;
+    margin-left :1.5rem;
+ }
+
+ .CelebrationContainer {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 999;
+}
+
+.CelebrationContainer.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.CelebrationPopup {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 420px;
+  text-align: center;
+}
+
+.CelebrationPopup button {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.confetti {
+  position: fixed;
+  top: -10px;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.WDDVContainer {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 999;
+}
+
+.WDDVContainer.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.WDDV{
+    background: rgba(0,0,0,0.4);
+    max-width: 700px;
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    align-items: center;    /* Centers content horizontally */
+    text-align: center;
+}
+.WDDV img {
+    max-width: 95%; /* Ensures image is responsive */
+    height: auto;
+    margin-top: 5px; /* Adds space under the header */
+    margin-bottom: 5px; /* Adds space above the button */
+}
+
+.WDDV button{
+   margin-top: 1.5rem;
+   padding: 0.8rem 1.2rem;
+   border: none;
+   border-radius: 10px;
+   cursor: pointer;
+}
