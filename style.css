@@ -245,6 +245,8 @@ footer {
 .WDDV{
     background: rgba(0,0,0,0.4);
     max-width: 600px;
+    padding: 2rem;
+    border-radius: 20px;
     display: flex;
     flex-direction: column; /* Stacks children vertically */
     align-items: center;    /* Centers content horizontally */
@@ -264,6 +266,7 @@ footer {
    border-radius: 10px;
    cursor: pointer;
 }
+
 
 
 
